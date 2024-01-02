@@ -1,0 +1,5 @@
+domain-name:80 {
+    root * /var/www/html
+    encode gzip
+    file_server
+}

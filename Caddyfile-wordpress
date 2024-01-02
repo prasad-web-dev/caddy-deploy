@@ -1,0 +1,8 @@
+domain-name:80 {
+    root * /var/www/wpblog
+    php_fastcgi unix//run/php/php8.1-fpm.sock	 {
+        index index.php
+    }
+    encode gzip
+    file_server
+}
